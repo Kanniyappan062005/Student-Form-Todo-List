@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="student-form">
+            <form>
+                <h1 class="student-form__heading" style="text-align: center;">Student Form</h1>
+                <table border="1" style="border-collapse: collapse;">
+                    <tr>
+                        <th>Name:</th>
+                        <td>
+                            <input type="text" placeholder="Enter your name" id="input-name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Age:</th>
+                        <td>
+                            <input type="number" placeholder="Enter your age" id="input-age">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Gender:</th>
+                        <td>
+                            <select name="" id="input-gender" style="width: 95%;">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Course:</th>
+                        <td>
+                            <select style="width: 95%;" id="input-course">
+                                <option>Java Script</option>
+                                <option>Java</option>
+                                <option>Python</option>
+                                <option>C++</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>E-mail:</th>
+                        <td>
+                            <input type="email" placeholder="Enter your e-mail" id="input-email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <p id="save-btn"
+                                style="width: 98%; font-weight: 900; text-align: center; padding: 5px; cursor: pointer; background-color: rgb(104, 204, 104);">
+                                Save</p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="student-details hidden" id="st-dts">
+
+            <form action="">
+                <h1 class="student-details__heading" style="text-align: center;">Student Details</h1>
+
+                <table border="1" id="details" style="width: 800px; border-collapse: collapse;">
+                    <tr class="student-details__head">
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                        <th>E-mail</th>
+                        <th>Action</th>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+
+</html>
